@@ -1,5 +1,11 @@
 package com.patilIT.repository;
 
-public interface ContactRepo {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.patilIT.model.Contact;
+
+public interface ContactRepo extends JpaRepository<Contact, Integer> {
+	
+	
 
 }
